@@ -5,11 +5,13 @@ use itertools::Itertools;
 #[derive(Debug)]
 struct File {
     size: usize,
+    #[allow(dead_code)]
     name: String
 }
 
 #[derive(Debug)]
 struct Directory {
+    #[allow(dead_code)]
     name: String,
     files: Vec<File>,
     subdirs: Vec<Directory>
